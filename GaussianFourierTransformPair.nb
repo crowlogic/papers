@@ -1,0 +1,148 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4882,        138]
+NotebookOptionsPosition[      3486,        103]
+NotebookOutlinePosition[      4056,        125]
+CellTagsIndexPosition[      3971,        120]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.885578996187414*^9, 3.885579013851038*^9}, 
+   3.885581905813311*^9},ExpressionUUID->"206280e4-61a8-4590-8529-\
+0e0a5d64f883"],
+
+Cell[BoxData[
+ RowBox[{"\"\<\!\(NormalDistribution[\*StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"], \
+\*StyleBox[\\\"\[Sigma]\\\", \\\"TR\\\"]]\) represents a normal (Gaussian) \
+distribution with mean \!\(\*StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]\) and \
+standard deviation \!\(\*StyleBox[\\\"\[Sigma]\\\", \
+\\\"TR\\\"]\).\\\\n\!\(NormalDistribution[]\) represents a normal \
+distribution with zero mean and unit standard deviation.\>\"", 
+  "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/NormalDistribution"]}]], "Print", "PrintUsage",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.885579019631003*^9, {3.885581908956646*^9, 3.885581909427143*^9}},
+ CellTags->
+  "Info23885543019-2123284",ExpressionUUID->"74b07855-dd9b-4048-baf1-\
+b68b01b297a4"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.885581848529623*^9, 3.8855819076718597`*^9}},
+ EmphasizeSyntaxErrors->
+  True,ExpressionUUID->"f4815f06-709f-443f-85cf-40c1c8ae88f1"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.885581897188113*^9, 
+  3.885581897724285*^9}},ExpressionUUID->"443555c6-1569-4b60-a7f1-\
+3e9a6fb468bd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FourierTransform", "[", 
+  RowBox[{
+   RowBox[{"g", "[", "u", "]"}], ",", "u", ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.885581918259411*^9, 3.885581960265223*^9}, {
+  3.885582045220627*^9, 3.885582060715477*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"be9214cc-48c5-464d-aba9-6ea8c6878c50"],
+
+Cell[BoxData[
+ RowBox[{"FourierTransform", "[", 
+  RowBox[{
+   RowBox[{"g", "[", "u", "]"}], ",", "u", ",", "t"}], "]"}]], "Output",
+ CellChangeTimes->{3.885582061308455*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"ff7176ea-8979-4c7e-9a8c-40413d83a297"]
+}, Open  ]],
+
+Cell[BoxData["FourierSeries"], "Input",
+ CellChangeTimes->{{3.885582001388604*^9, 
+  3.885582003131309*^9}},ExpressionUUID->"cc826e72-e3ed-4552-adef-\
+45f45e7579ac"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CharacteristicFunction", "[", 
+  RowBox[{
+   RowBox[{"NormalDistribution", "[", 
+    RowBox[{"0", ",", "1"}], "]"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.885582093545917*^9, 3.885582136950409*^9}, {
+  3.885582172545335*^9, 3.885582195848197*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"2986f695-f706-42b4-adc6-f65977608a6d"],
+
+Cell[BoxData[
+ SuperscriptBox["\[ExponentialE]", 
+  RowBox[{"-", 
+   FractionBox[
+    SuperscriptBox["t", "2"], "2"]}]]], "Output",
+ CellChangeTimes->{{3.885582094429928*^9, 3.8855821377852573`*^9}, {
+  3.8855821733800488`*^9, 3.885582196299313*^9}},
+ CellLabel->"Out[8]=",ExpressionUUID->"f2dcbfe8-1ae8-440c-ac11-201fb1a29a64"]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{876, Automatic}, {264, Automatic}},
+Magnification->1.5,
+FrontEndVersion->"11.3 for Linux x86 (64-bit) (March 6, 2018)",
+StyleDefinitions->"ReverseColor.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info23885543019-2123284"->{
+  Cell[758, 27, 858, 19, 186, "Print",ExpressionUUID->"74b07855-dd9b-4048-baf1-b68b01b297a4",
+   CellTags->"Info23885543019-2123284"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info23885543019-2123284", 3812, 114}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 175, 3, 47, "Input",ExpressionUUID->"206280e4-61a8-4590-8529-0e0a5d64f883"],
+Cell[758, 27, 858, 19, 186, "Print",ExpressionUUID->"74b07855-dd9b-4048-baf1-b68b01b297a4",
+ CellTags->"Info23885543019-2123284"]
+}, Open  ]],
+Cell[1631, 49, 182, 3, 47, "Input",ExpressionUUID->"f4815f06-709f-443f-85cf-40c1c8ae88f1"],
+Cell[1816, 54, 152, 3, 47, "Input",ExpressionUUID->"443555c6-1569-4b60-a7f1-3e9a6fb468bd"],
+Cell[CellGroupData[{
+Cell[1993, 61, 324, 6, 47, "Input",ExpressionUUID->"be9214cc-48c5-464d-aba9-6ea8c6878c50"],
+Cell[2320, 69, 252, 5, 53, "Output",ExpressionUUID->"ff7176ea-8979-4c7e-9a8c-40413d83a297"]
+}, Open  ]],
+Cell[2587, 77, 165, 3, 47, "Input",ExpressionUUID->"cc826e72-e3ed-4552-adef-45f45e7579ac"],
+Cell[CellGroupData[{
+Cell[2777, 84, 362, 7, 82, "Input",ExpressionUUID->"2986f695-f706-42b4-adc6-f65977608a6d"],
+Cell[3142, 93, 328, 7, 71, "Output",ExpressionUUID->"f2dcbfe8-1ae8-440c-ac11-201fb1a29a64"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
